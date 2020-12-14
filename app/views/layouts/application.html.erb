@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>BusinessRules</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +12,35 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href=<%= root_url %>>
+          <p class="is-size-4">Super Loja</p>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="mainNavbar" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="button is-light">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-success is-bold">
+      <div class="hero-body">
+        <p class="title">Produtos</p>
+        <p class="subtitle">Aqui você encontra os melhores produtos!</p>
+      </div>
+    </section>
+      <%= yield %>
   </body>
 </html>
