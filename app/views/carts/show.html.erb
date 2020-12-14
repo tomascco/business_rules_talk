@@ -7,3 +7,16 @@
     <%= render @cart.cart_products %>
   </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <div class="level">
+      <div class="level-item">
+        <%= link_to orders_path, method: :post, class: "button is-primary is-large is-light" do %>
+        <span>Criar pedido</span>
+        <span class="icon"><i class="fas fa-angle-right"></i></span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
