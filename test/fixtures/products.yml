@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1200
+  name: Super Bonder
+  description: Lorem ipsum solus medis creatus aegis legis sanctus discussurus
+
+two:
+  price: 1300
+  name: MyString
+  description: MyText
