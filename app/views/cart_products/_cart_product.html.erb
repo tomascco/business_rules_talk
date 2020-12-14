@@ -1,0 +1,42 @@
+    <div class="box">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+          </figure>
+        </div>
+        <div class="media-content">
+          <div class="content">
+            <p class="title"><%= cart_product.product.name %></p>
+            <br>
+            <p><%= cart_product.product.description&.truncate(80) %></p>
+          </div>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <p class="level-item is-size-5">
+                <strong>R$ <%= format_price(cart_product.product.price) %></strong>
+              </p>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <%= form_with model: cart_product do |f| %>
+                  <div class="field has-addons">
+                    <p class="control">
+                      <span class="select">
+                        <%= f.select :quantity, [1, 2, 3, 4] %>
+                      </span>
+                    </p>
+                    <p class="control">
+                      <%= f.submit "Atualizar", class: "button" %>
+                    </p>
+                    <%= link_to cart_product_path(cart_product), method: :delete, class: "button is-danger" do %>
+                      <i class="fas fa-trash"></i>
+                    <% end %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </article>
+    </div>

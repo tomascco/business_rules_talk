@@ -17,18 +17,12 @@
         <a class="navbar-item" href=<%= root_url %>>
           <p class="is-size-4">Super Loja</p>
         </a>
-
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
       </div>
 
       <div id="mainNavbar" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class="button is-light">
+            <a class="button is-light" href="<%= cart_path %>">
               <i class="fas fa-shopping-cart"></i>
             </a>
           </div>
@@ -37,8 +31,8 @@
     </nav>
     <section class="hero is-success is-bold">
       <div class="hero-body">
-        <p class="title">Produtos</p>
-        <p class="subtitle">Aqui você encontra os melhores produtos!</p>
+        <h1 class="title">Produtos</p>
+        <h2 class="subtitle">Aqui você encontra os melhores produtos!</p>
       </div>
     </section>
       <%= yield %>
