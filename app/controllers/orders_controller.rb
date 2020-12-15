@@ -5,4 +5,11 @@ class OrdersController < ApplicationController
 
   def create
   end
+
+  private
+
+  def clear_cart!
+    @cart.destroy
+    session.delete(:cart_id)
+  end
 end
