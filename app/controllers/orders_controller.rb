@@ -4,6 +4,14 @@ class OrdersController < ApplicationController
   before_action :set_cart_with_cart_products
 
   def create
+    result = CreateOrder.call(cart: @cart)
+
+    if result[:success]
+      clear_cart!
+      redirect_to cart_url, notice: 'Pedido criado com sucesso'
+    else
+      redirect_to cart_url, notice: 'Erro ao criar o pedido'
+    end
   end
 
   private
