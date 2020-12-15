@@ -3,7 +3,6 @@ class Orders::Create < Micro::Case
 
   def call!
     fetch_cart_products
-      .then(apply(:fetch_cart_products))
       .then(apply(:validate_cart_products))
       .then(apply(:build_order))
       .then(apply(:save_order))
