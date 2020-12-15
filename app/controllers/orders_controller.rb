@@ -5,7 +5,11 @@ class OrdersController < ApplicationController
 
   def create
     Orders::Create.call(cart: @cart) do |on|
-      on.success { redirect_to cart_path, notice: 'Pedido criado com sucesso' }
+      on.success do
+        clear_cart!
+        redirect_to cart_path, notice: 'Pedido criado com sucesso'
+      end
+
       on.failure { redirect_to cart_path, notice: 'Erro ao criar o pedido' }
     end
   end
