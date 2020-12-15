@@ -31,6 +31,8 @@ class CreateOrder < ApplicationService
   private
 
   def validate_cart_products
+    return @errors << 'no products in cart' if @cart.cart_products.blank?
+
     @cart.cart_products.each do |cart_product|
       return @errors << 'invalid quantity' if cart_product.quantity < 1
     end
