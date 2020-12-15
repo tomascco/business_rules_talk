@@ -10,7 +10,7 @@
             <p class="title mb-1"><%= cart_product.product.name %></p>
             <p><%= cart_product.product.description&.truncate(80) %></p>
           </div>
-          <nav class="level is-mobile">
+          <nav class="level">
             <div class="level-left">
               <p class="level-item is-size-5">
                 <strong>R$ <%= format_price(cart_product.product.price) %></strong>
