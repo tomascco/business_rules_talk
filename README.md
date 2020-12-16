@@ -8,6 +8,7 @@ O projeto usa Ruby 2.7.2, Rails 6.1.0, sqlite3 e yarn. Para rodar localmente, si
 
 1. Clone o repositório e entre na pasta:
 > git clone https://github.com/tomascco/business_rules_talk
+
 > cd business_rules_talk
 
 2. Dê bundle
