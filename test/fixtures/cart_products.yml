@@ -9,3 +9,8 @@ two:
   cart: one
   quantity: 1
   product: flour
+
+invalid:
+  cart: one
+  quantity: 0
+  product: flour
