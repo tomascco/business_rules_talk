@@ -1,9 +1,5 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  total_price: 1
-  status: 1
+  total_price: 3700
 
-two:
-  total_price: 1
-  status: 1

@@ -7,10 +7,10 @@ class CartProductsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create cart_product" do
     assert_difference('CartProduct.count') do
-      post cart_products_url, params: { cart_product: { cart_id: @cart_product.cart_id, price: @cart_product.price, quantity: @cart_product.quantity } }
+      post cart_products_url, params: { cart_product: { cart_id: @cart_product.cart_id, product_id: @cart_product.product_id, quantity: @cart_product.quantity } }
     end
 
-    assert_redirected_to cart_product_url(CartProduct.last)
+    assert_redirected_to root_url
   end
 
   test "should destroy cart_product" do
@@ -18,6 +18,6 @@ class CartProductsControllerTest < ActionDispatch::IntegrationTest
       delete cart_product_url(@cart_product)
     end
 
-    assert_redirected_to cart_products_url
+    assert_redirected_to cart_url
   end
 end

@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+glue:
   price: 1200
   name: Super Bonder
   description: Lorem ipsum solus medis creatus aegis legis sanctus discussurus
 
-two:
+flour:
   price: 1300
-  name: MyString
-  description: MyText
+  name: Farinha em saco
+  description: Lorem ipsum dolor sit amet dab
