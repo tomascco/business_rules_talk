@@ -1,24 +1,28 @@
-# README
+# Desafio Regras de negócio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Essa aplicação é um exemplo de loja online com página de produtos, carrinho e pedidos. O desafio aqui é implementar a lógica de checkout que deverá estar contida em [Orders](app/controllers/orders_controller.rb). São sugeridas duas soluções nas branchs `services` e `u-case`.
 
-Things you may want to cover:
+## Instalação
 
-* Ruby version
+O projeto usa Ruby 2.7.2, Rails 6.1.0, sqlite3 e yarn. Para rodar localmente, siga os passos:
 
-* System dependencies
+1. Clone o repositório e entre na pasta:
+> git clone https://github.com/tomascco/business_rules_talk
+> cd business_rules_talk
 
-* Configuration
+2. Dê bundle
+> bundle install
 
-* Database creation
+3. Instale as dependências do yarn:
+> yarn install
 
-* Database initialization
+Após isso, é só rodar o servidor com
+> rails s
 
-* How to run the test suite
+## Screenshots
 
-* Services (job queues, cache servers, search engines, etc.)
+Produtos
+![Página de produtos](https://i.imgur.com/RqtrsqV.jpg)
 
-* Deployment instructions
-
-* ...
+Carrinho
+![Página de carrinho](https://i.imgur.com/fMVh1zD.jpg)
