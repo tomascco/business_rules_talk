@@ -17,7 +17,7 @@ class Orders::Create < Micro::Case
   end
 
   def validate_cart_products(cart_products:, **)
-    if cart_products.any? { |obj| obj.quantity < 0 }
+    if cart_products.any? { |obj| obj.quantity < 1 }
       return Failure(:invalid_quantity)
     else
       Success(result: {cart_products: cart_products})
