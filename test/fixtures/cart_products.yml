@@ -2,10 +2,10 @@
 
 one:
   cart: one
-  quantity: 1
-  price: 1
+  quantity: 2
+  product: glue
 
 two:
-  cart: two
+  cart: one
   quantity: 1
-  price: 1
+  product: flour
