@@ -88,6 +88,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+    kind (3.1.0)
     listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -179,6 +180,11 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.3)
       concurrent-ruby (~> 1.0)
+    u-attributes (2.6.0)
+      kind (>= 3.0, < 5.0)
+    u-case (4.2.1)
+      kind (>= 3.0, < 5.0)
+      u-attributes (~> 2.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -218,6 +224,7 @@ DEPENDENCIES
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
+  u-case
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
