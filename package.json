@@ -17,8 +17,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "rails s -e test -p 3030",
+    "start": "rails s -e test -p 3000",
     "test": "cypress run",
-    "ci": "start-server-and-test start http://localhost:3030 test"
+    "ci": "start-server-and-test start http://localhost:3000 test"
   }
 }
