@@ -1,4 +1,7 @@
 {
   "baseUrl": "http://localhost:3000",
-  "integrationFolder": "test/integration"
+  "integrationFolder": "test/integration",
+  "env": {
+    "railsEnv": "test"
+  }
 }
