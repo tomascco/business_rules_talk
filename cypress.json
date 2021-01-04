@@ -1,6 +1,8 @@
 {
   "baseUrl": "http://localhost:3000",
   "integrationFolder": "test/integration",
+  "screenshotsFolder": "tmp/cypress_screenshots",
+  "videosFolder": "tmp/cypress_videos",
   "env": {
     "railsEnv": "test"
   }
