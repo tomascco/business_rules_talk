@@ -13,6 +13,12 @@
   "version": "0.1.0",
   "devDependencies": {
     "cypress": "^6.2.0",
+    "start-server-and-test": "^1.11.7",
     "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "rails s -e test -p 3030",
+    "test": "cypress run",
+    "ci": "start-server-and-test start http://localhost:3030 test"
   }
 }

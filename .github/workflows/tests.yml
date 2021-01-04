@@ -33,4 +33,4 @@ jobs:
     - name: Run unit tests
       run: bundle exec rails test
     - name: Run integration tests
-      run: yarn run cypress run
+      run: yarn run ci
