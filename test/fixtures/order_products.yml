@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-glue:
-  name: Super Bonder
+minecraft:
+  name: Minecraft Java Edition
   price: 2400
   quantity: 2
   order: one
 
-flour:
-  name: Farinha em saco
+stardew_valley:
+  name: Stardew Valley
   price: 1300
   quantity: 1
   order: one

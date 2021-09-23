@@ -1,16 +1,16 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  cart: one
+minecraft:
+  cart: cart
   quantity: 2
-  product: glue
+  product: minecraft
 
-two:
-  cart: one
+stardew_valley:
+  cart: cart
   quantity: 1
-  product: flour
+  product: stardew_valley
 
 invalid:
-  cart: one
+  cart: cart
   quantity: 0
-  product: flour
+  product: minecraft

@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-glue:
+minecraft:
   price: 1200
-  name: Super Bonder
-  description: Lorem ipsum solus medis creatus aegis legis sanctus discussurus
+  name: Minecraft Java Edition
+  description: Construa várias coisas incríveis nesse jogo em blocos
 
-flour:
+stardew_valley:
   price: 1300
-  name: Farinha em saco
-  description: Lorem ipsum dolor sit amet dab
+  name: Stardew Valley
+  description: Crie sua fazenda, conheça novas pessoas e explore Stardew Valley
