@@ -2,7 +2,10 @@ require "test_helper"
 
 class CartsControllerTest < ActionDispatch::IntegrationTest
   test "should get show" do
+    # Act
     get cart_url
-    assert_response :success
+
+    # Assert
+    assert_response(:success)
   end
 end
