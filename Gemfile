@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.0.2'
 
 gem 'rails', '~> 6.1.0'
 gem 'sqlite3', '~> 1.4'
@@ -22,10 +22,12 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
   gem 'faker'
+  gem 'irb', require: false
 end
 
 group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'rexml', require: false
 end
