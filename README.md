@@ -4,7 +4,7 @@ Essa aplicação é um exemplo de loja online com página de produtos, carrinho 
 
 ## Instalação
 
-O projeto usa Ruby 2.7.2, Rails 6.1.0, sqlite3 e yarn. Para rodar localmente, siga os passos:
+O projeto usa Ruby 3.0, Rails 6.1.0, sqlite3 e yarn. Para rodar localmente, siga os passos:
 
 1. Clone o repositório e entre na pasta:
 
