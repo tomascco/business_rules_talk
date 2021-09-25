@@ -11,6 +11,6 @@ stardew_valley:
   product: stardew_valley
 
 invalid:
-  cart: cart
+  cart: invalid_cart
   quantity: 0
   product: minecraft

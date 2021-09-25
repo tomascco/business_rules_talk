@@ -23,7 +23,7 @@ class Order
       end
       order.total_price = order_total
 
-      return Result.success if order.save
+      return Result.success(order: order) if order.save
 
       Result.failure
     end
