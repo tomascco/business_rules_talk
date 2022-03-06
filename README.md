@@ -1,5 +1,7 @@
 # Desafio Regras de negócio
 
+EN: **example application for two private talks that I presented in 2020 and 2021. This application has a pretty simple frontend to make the explanations more tangible. It also proposes a challange to the viewers on how to implement a bussiness rule that was letf incomplete.**
+
 Essa aplicação é um exemplo de loja online com página de produtos, carrinho e pedidos. O desafio aqui é implementar a lógica de checkout que deverá estar contida em [Orders](app/controllers/orders_controller.rb). São sugeridas duas soluções nas branchs `services` e `u-case`.
 
 ## Instalação
